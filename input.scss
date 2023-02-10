@@ -1,0 +1,1052 @@
+@import "mixins/variables";
+@import "mixins/fonts";
+@import "mixins/colors";
+@import "mixins/header";
+@import "mixins/footer";
+@import "mixins/accessiblity";
+@import "mixins/animations";
+@import "mixins/banners";
+@import "mixins/bootstrapoverride";
+@import "mixins/is_admin";
+@import "mixins/sliders";
+@import "mixins/index";
+
+
+
+.container{
+  .row{
+    padding: 40px 0px;
+  }
+}
+
+.button, .btn {
+  background-color: $orange;
+  color: $darkblue;
+  padding: 10px 25px;
+  font-family: $title;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+.button:hover, .button:focus, .btn:hover, .btn:focus{
+  text-decoration: none;
+  background-color: $lightblue;
+  color: white;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.row{
+  max-width: 1140px;
+  display: flex;
+  margin: auto!important;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+
+.black{
+  color: $black;
+}
+
+#content ul{
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+
+#AuditOptions{
+  .row{
+    padding-top: 145px;
+    padding-bottom: 120px;
+    justify-content: space-between;
+    .discover{
+      width: 255px;
+      align-self: center;
+      h3{
+        font-family: $title;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 42px;
+        color: $darkblue;
+      }
+
+    }
+    .auditoption{
+      width: 265px;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 40px rgba(195, 203, 241, 0.34);
+      border-radius: 8px;
+      padding: 30px 15px;
+
+      h3{
+        color: $lightblue;
+        width: 100%;
+        text-align: center;
+        font-size: 2.1rem;
+        margin-bottom: 40px;
+      }
+      ul{
+        list-style: none;
+        position: relative;
+        max-width: 202px;
+        margin: 0px auto;
+        li{
+          color: black;
+          font-size: 1.6rem;
+          font-family: $title;
+          font-weight: 600;
+          position: relative;
+          padding: 10px 0px;
+          padding-left: 25px;
+          margin-bottom: 10px;
+          span{
+            color: black;
+            font-size: 1.6rem;
+            font-family: $title;
+            font-weight: 600;
+            position: relative;
+          }
+          span::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #F5F5F5;
+            margin-bottom: -15px;
+            margin-top: 15px;
+          }
+
+        }
+        li:before {
+            content: "•";
+            font-size: 32px;
+            padding-right: 5px;
+            color: black;
+            position: absolute;
+            margin-left: -25px;
+            top: 0px;
+       }
+       li:last-child{
+         border-bottom: 0px;
+
+         span::after{
+          content: '';
+          display: none;
+          width: 100%;
+          height: 1px;
+          background-color: #F5F5F5;
+          margin-bottom: -10px;
+          margin-top: 10px;
+        }
+       }
+      }
+    }
+    .auditoption:hover, .auditoption:focus, .auditoption.selected{
+      background-color: $darkblue;
+      ul{
+        li{
+          color: white;
+          font-size: 1.6rem;
+          font-weight: $title;
+          font-weight: 600;
+        }
+        li:before {
+          content: "•";
+          font-size: 32px;
+          color: white;
+       }
+       li:last-child{
+         border-bottom: 0px;
+       }
+      }
+      *{
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+#SubpageOptions{
+  .row{
+    padding: 60px 0px;
+    flex: 0 0 100%;
+    justify-content: center;
+    .discover{
+      flex: 0 0 100%;
+      max-width: 100%;
+      align-self: center;
+      *{
+        text-align: center;
+      }
+      h3{
+        font-family: $title;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 42px;
+        color: $darkblue;
+        text-align: center;
+      }
+
+    }
+    .auditoption{
+      flex: 0 0 100%;
+      max-width: calc(33% - 45px);
+      background: #FFFFFF;
+      box-shadow: 0px 8px 40px rgba(195, 203, 241, 0.34);
+      border-radius: 8px;
+      padding: 30px 15px;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 15px;
+
+      h3{
+        color: $lightblue;
+        width: 100%;
+        text-align: center;
+        font-size: 2.1rem;
+        margin-bottom: 20px;
+      }
+      p{
+        text-align: center;
+      }
+      .button{
+        margin: auto;
+      }
+    }
+    .auditoption:hover, .auditoption:focus, .auditoption.selected{
+      background-color: $darkblue;
+      p, h4, h3{
+        color: white;
+      }
+    }
+  }
+}
+
+#formbar{
+  background-color: $darkblue;
+  position: relative;
+  overflow: hidden;
+  .row{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    position: relative;
+
+    p{
+      color: white;
+      position: relative;
+      z-index: 101;
+    }
+    h4{
+      color: white;
+      position: relative;
+      z-index: 101;
+    }
+    .ContactBlueBlob{
+      position: absolute;
+      top: -100px;
+      right: -210px;
+      z-index: 96;
+      width: 844px;
+      height: 477px;
+      max-width: 200%;
+      transform: rotate(-8deg);
+    }
+    .formcontainer{
+      position: relative;
+      z-index: 98;
+      background-color: transparent;
+      padding: 10px 0px;
+      display: flex;
+      flex: 0 0 100%;
+      max-width: 100%;
+      flex-wrap: wrap;
+
+
+      label{
+        flex: 0 0 100%;
+        max-width: calc(33% - 60px);
+      }
+      .labelname{
+        display: none;
+      }
+      input[type="text"], input[type="email"]{
+        margin-bottom: 10px;
+        background: #F7F6FB;
+        border: 1px solid #D9D6D6;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1.6rem;
+        color: $darkblue;
+        font-family: $reg;
+        padding: 12px 20px;
+        min-height: 48px;
+        height: 50px;
+      }
+      p{
+        margin-bottom: 0px;
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .button{
+        border: 0px;
+        text-align: center;
+        cursor: pointer;
+        height: 50px;
+      }
+      .button:hover{
+        background-color: white;
+        color: $darkblue;
+      }
+    }
+  }
+}
+
+
+
+#AODACompliance{
+  .row{
+    h4{
+      width: 100%;
+      text-align: center;
+      font-family: $title;
+      color: $darkblue;
+      font-weight: 600;
+      font-size: 2.8rem;
+    }
+    strong{
+      display: block;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      color: $darkblue;
+    }
+    p{
+      font-family: $reg;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+      color: $darkblue;   
+    }
+  }
+  .threesections{
+    padding-top: 80px;
+    padding-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    flex: 0 0 100%;
+    .left{
+      width: 400px;
+      text-align: left;
+    }
+    .middle{
+      max-width: 386px;
+    }
+    .right{
+      width: 400px;
+      text-align: left;
+    }
+  }
+}
+
+
+
+
+#AccessibilityAnalysis{
+  background-color: $darkblue;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  .threesections{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    flex: 0 0 100%;
+    position: relative;
+    .left{
+      width: 100%;
+      max-width: calc(100% - 740px);
+      text-align: left;
+      align-self: center;
+
+      h5{
+        color:white;
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin-bottom: 60px;
+      }
+      p{
+        font-family: $reg;
+        color: white;
+        margin-bottom: 40px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+      }
+      p:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    .middle{
+      max-width: 386px;
+    }
+    .right{
+      width: 740px;
+      text-align: left;
+      position: relative;
+
+      .ContactBlueBlob{
+        position: absolute;
+        top: -100px;
+        right: -210px;
+        z-index: 96;
+        width: 844px;
+        height: 477px;
+        max-width: 200%;
+        transform: rotate(-8deg);
+      }
+      .Womenlaptop{
+        position: absolute;
+        z-index: 99;
+        bottom: 0px;
+        width: 363px;
+        height: 374px;
+      }
+      #formcontainer{
+        position: relative;
+        z-index: 98;
+        background-color: white;
+        max-width: 455px;
+        float: right;
+        padding: 60px 55px;
+        padding-bottom: 25px;
+
+        .labelname{
+          display: none;
+        }
+        input[type="text"], input[type="email"]{
+          margin-bottom: 10px;
+          background: #F7F6FB;
+          border: 1px solid #D9D6D6;
+          box-sizing: border-box;
+          width: 100%;
+          font-size: 1.6rem;
+          color: $darkblue;
+          font-family: $reg;
+          padding: 12px 20px;
+          min-height: 48px;
+        }
+        textarea{
+          margin-bottom: 30px;
+          background: #F7F6FB;
+          border: 1px solid #D9D6D6;
+          box-sizing: border-box;
+          width: 100%;
+          height: 92px;
+          font-size: 1.6rem;
+          color: $darkblue;
+          font-family: $reg;
+          padding: 12px 20px;
+        }
+        p{
+          margin-bottom: 0px;
+        }
+        .button{
+          border: 0px;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+#AODALeaders{
+  h2, h3, h4, h5, h6{
+    width: 100%;
+    text-align: center;
+    font-family: $title;
+    color: $darkblue;
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .row{
+    padding: 80px 0px;
+  }
+  .companylogos{
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 100px;
+
+    a{
+      display: inline-flex;
+      flex: 0 0 100%;
+      max-width: 201px;
+      height: 118px;
+      justify-content: center;
+      border: 0px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      img{
+        align-self: center;
+      }
+    }
+  }
+}
+
+
+
+.subpagenewspage{
+  padding: 80px 0px;
+  width: 100%;
+
+  nav{
+    width: 100%;
+    margin: 40px 0px;
+  
+    .nav-links{
+      display: flex;
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: space-between;
+      a{
+        background-color: $orange;
+        color: $darkblue;
+        padding: 10px 25px;
+        font-family: $title;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 1.4rem;
+        text-decoration: none;
+      }
+    }
+  }
+  article{
+    width: 100%;
+  }
+  .card-body{
+    padding: 0px;
+  }
+  ul {
+      padding-left: 20px!important;
+      margin-bottom: 40px!important;
+      li{
+        margin-bottom: 10px;
+      }
+  }
+  a{
+    color: $lightblue;
+    text-decoration: underline;
+  }
+
+}
+
+.blog, .single {
+
+  .navigation{
+    margin-bottom: 60px;
+    ul{
+      display: flex;
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: center;
+      list-style: none;
+  
+      li{
+  
+        a:not(.button){
+          background-color: $darkblue;
+          color: white;
+          margin: 0px 10px;
+          border-radius: 50px;
+          width: 36px;
+          height: 36px;
+          padding: 8px 10px;
+          display: block;
+          text-align: center;
+          font-size: 20px;
+          text-decoration: none;
+        }
+        a:not(.button):hover{
+          background-color: $lightblue;
+        }
+        .button{
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+.wpcf7 form .wpcf7-response-output {
+  color: white;
+  font-size: 1.6rem;
+}
+#SubBanner{
+  .wpcf7 form .wpcf7-response-output {
+    margin: 0px;
+    color: black;
+    font-size: 1.6rem;
+  }
+}
+#SubpageOptions .row .auditoption p {
+  width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  #AODACompliance .threesections {
+    padding: 60px 15px 60px 15px;
+  }
+
+
+  #AODACompliance .threesections {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    max-width: 100%;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #AODACompliance .threesections .right, #AODACompliance .threesections .left {
+    width: 49%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  #AODACompliance .threesections .middle {
+    max-width: 100%;
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  #SubpageOptions .row, #formbar .row {
+      padding: 60px 15px;
+  }
+  #AccessibilityAnalysis .threesections {
+    padding: 50px 15px;
+  }
+  #AODALeaders .row {
+      padding: 60px 15px;
+  }
+  .row{
+    padding: 0px 15px;
+    max-width: 100%;
+  }
+  #MainBanner .row .leftside ul.checkmark li:before {
+    padding-left: 15px;
+  }
+
+}
+@media only screen and (max-width: 1140px) {
+  #AuditOptions .row .discover {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 40px;
+  }
+  #AuditOptions .row {
+      padding: 100px 15px;
+      justify-content: center;
+  }
+  #AODALeaders .companylogos {
+      justify-content: center;
+      padding-top: 0px;
+      padding-bottom: 60px;
+  }
+  #AODALeaders .companylogos a {
+      margin: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item:focus{
+    background-color: $darkblue;
+    color: white;
+    a, a:focus{
+      background-color: $darkblue!important;
+      color: white!important;
+    }
+  }
+  header #bottombar nav {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    padding: 0px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    z-index: 98;
+  }
+  header #bottombar #logo {
+      display: flex;
+      flex: 0 0 100%;
+      max-width: 320px;
+      flex-wrap: nowrap;
+      position: relative;
+      z-index: 100;
+  }
+  header #bottombar nav ul#mega-menu-menu-1 {
+      width: 100%;
+      max-width: 100%;
+      right: 0px;
+      top: 8px;
+  }
+  #AuditOptions .row .auditoption {
+      width: 265px;
+      padding: 30px 15px;
+      margin: 20px;
+  }
+
+
+
+  #AccessibilityAnalysis .threesections .left {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    align-self: center;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 40px;
+  }
+  #AccessibilityAnalysis .threesections .right {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+  #AccessibilityAnalysis .threesections .right .ContactBlueBlob {
+      position: absolute;
+      top: -600px;
+      max-width: 200%;
+      transform: rotate(-8deg);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #SubpageOptions .row .auditoption {
+      flex: 0 0 100%;
+      max-width: calc(50% - 45px);
+  }
+  #formbar .row .formcontainer label, #formbar .row .formcontainer .button {
+      flex: 0 0 100%;
+      max-width: calc(50% - 10px);
+  }
+  #SubBanner {
+      height: auto;
+      .row {
+        position: relative;
+        height: auto;
+        padding: 60px 15px;
+        .leftside {
+          max-width: 100%;
+          flex: 0 0 100%;
+          align-self: center;
+          margin-bottom: 40px;
+      }
+      .rightside {
+        max-width: 100%;
+        flex: 0 0 100%;
+        align-self: center;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  h1, .h1{
+    font-size: 4.8rem;
+  }
+  h2, .h2{
+    font-size: 3.8rem;
+  }
+  .col-md-12 {
+      /* width: 100%; */
+      flex: 0 0 100%;
+  }
+  footer .row .footer-logo {
+      margin-bottom: 40px;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+
+  #MainBanner .orangeblob {
+      position: absolute;
+      top: -5px;
+      right: -50px;
+  }
+  #MainBanner .row .leftside {
+      max-width: 100%;
+      flex: 0 0 100%;
+      align-self: center;
+      margin-top: -40px;
+      position: relative;
+      z-index: 99;
+  }
+  #MainBanner .row .rightside {
+      display: none;
+  }
+
+  #AccessibilityAnalysis .threesections .right .Womenlaptop {
+      display: none;
+  }
+  label {
+      width: 100%;
+  }
+  #AccessibilityAnalysis .threesections .right #formcontainer {
+      max-width: 100%;
+  }
+  #AccessibilityAnalysis .threesections .left h5 {
+      margin-bottom: 40px;
+  }
+  #AccessibilityAnalysis .threesections .left p {
+      margin-bottom: 20px;
+  }
+  #AODALeaders .row {
+      padding: 60px 15px;
+      padding-bottom: 20px;
+  }
+  #AODACompliance .threesections .right, #AODACompliance .threesections .left {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .logo-text{
+    display: inline-flex;
+    flex: 0 0 100%;
+    align-content: center;
+    align-items: center;
+  }
+  .col-sm-12 {
+      /* width: 100%; */
+      flex: 0 0 100%;
+  }
+  .displaymobile{
+    display: block;
+  }
+  h1, .h1{
+    font-size: 4.6rem;
+  }
+  h2, .h2{
+    font-size: 3.2rem;
+  }
+  h3, .h3{
+    font-size: 2.8rem;
+  }
+  h4, .h4{
+    font-size: 2.4rem;
+  }
+  h5, .h5{
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #SubpageOptions .row .auditoption {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  footer .row .footermenu {
+      align-self: center;
+      max-width: 50%;
+      flex: 0 0 100%;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 99;
+  }
+  footer .row .footer-logo {
+      align-self: center;
+      max-width: 100%;
+      flex: 0 0 100%;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 99;
+  }
+  footer .row .GooderMarketing {
+      align-self: center;
+      max-width: 100%;
+      flex: 0 0 100%;
+      position: relative;
+      z-index: 99;
+  }
+  header #topbar a img {
+      margin-right: 5px;
+      align-self: center;
+  }
+  header #topbar a {
+      color: white;
+      display: inline-flex;
+  }
+  header #topbar .headerphone {
+      margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #formbar .row .formcontainer label, #formbar .row .formcontainer .button {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  #AuditOptions .row {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      justify-content: center;
+  }
+  header #bottombar #logo .full-text {
+      margin-left: 10px;
+      font-size: 1.6rem;
+      font-weight: 600;
+  }
+  .col-xsm-12 {
+      /* width: 100%; */
+      flex: 0 0 100%;
+  }
+
+  h1, .h1{
+    font-size: 4.4rem;
+  }
+  h2, .h2{
+    font-size: 3rem;
+  }
+  h3, .h3{
+    font-size: 2.6rem;
+  }
+  h4, .h4{
+    font-size: 2.2rem;
+  }
+  h5, .h5{
+    font-size: 1.8rem;
+  }
+  h6, .h6{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  a{
+    font-size: 1.6rem;
+  }
+
+
+  header #topbar {
+      height: 80px;
+  }
+  header #topbar .button {
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+      display: block;
+  }
+  .headerinfo{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  #AccessibilityAnalysis .threesections .right #formcontainer {
+      position: relative;
+      z-index: 98;
+      background-color: white;
+      max-width: 455px;
+      float: right;
+      padding: 20px 15px;
+      padding-bottom: 5px;
+  }
+  footer .row #footerblobs {
+      position: absolute;
+      bottom: 0px;
+  }
+  footer .row #footerblobs .FooterSmallBlobs {
+      position: relative;
+      left: 190px;
+      top: -20px;
+      z-index: 9;
+  }
+  footer .row #footerblobs .FooterBlobs {
+      position: relative;
+      left: 0px;
+      z-index: 8;
+  }
+  footer .row .footermenu h6 {
+      margin-bottom: 15px;
+  }
+  #AODALeaders .row {
+      padding: 40px 15px;
+  }
+  #AODALeaders .companylogos{
+    padding-top: 0px;
+  }
+  #AuditOptions .row {
+      padding: 60px 15px;
+      justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 430px) {
+  #MainBanner .orangeblob {
+      position: absolute;
+      top: -5px;
+      right: -150px;
+  }
+
+  h1, .h1{
+    font-size: 4.2rem;
+  }
+  h2, .h2{
+    font-size: 3rem;
+  }
+  h3, .h3{
+    font-size: 2.6rem;
+  }
+  h4, .h4{
+    font-size: 2.2rem;
+  }
+  h5, .h5{
+    font-size: 1.7rem;
+  }
+  h6, .h6{
+    font-size: 1.4rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  a{
+    font-size: 1.5rem;
+  }
+}

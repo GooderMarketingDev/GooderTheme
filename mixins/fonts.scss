@@ -1,0 +1,85 @@
+@import "colors";
+
+@font-face {
+font-family: "Poppins-SemiBold";
+src: url("Fonts/Poppins-SemiBold.otf") format("opentype");
+}
+@font-face {
+font-family: "Poppins-Bold";
+src: url("Fonts/Poppins-Bold.otf") format("opentype");
+}
+@font-face {
+font-family: "Poppins-Regular";
+src: url("Fonts/Poppins-Regular.otf") format("opentype");
+}
+
+  
+$title: 'Poppins-SemiBold', 'Poppins-Bold', 'Poppins-Regular';
+$reg: 'Poppins-Regular', 'Poppins-SemiBold', sans-serif;
+$poppins: 'Poppins-Regular', 'Poppins-SemiBold', sans-serif;
+
+
+
+body, html{
+    font-size: 10px;
+    font-family: $reg;
+    color: $black;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  
+  h1, .h1{
+    font-size: 4.2rem;
+    font-family: $title;
+    color: $black;
+  }
+  h2, .h2{
+    font-size: 3.2rem;
+    font-family: $title;
+    color: $black;
+  }
+  h3, .h3{
+    font-size: 2.8rem;
+    font-family: $title;
+    color: $black;
+  }
+  h4, .h4{
+    font-size: 2.2rem;
+    font-family: $title;
+    color: $black;
+  }
+  h5, .h5{
+    font-size: 1.9rem;
+    font-family: $title;
+    color: $black;
+  }
+  h6, .h6{
+    font-size: 1.5rem;
+    font-family: $title;
+    color: $black;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    color: $darkblue;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    line-height: 1.5;
+  }
+  p{
+    font-size: 1.6rem;
+    font-family: $reg;
+    color: $black;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  strong{
+    font-weight: bold;
+    font-family: $title;
+  }
+  a{
+    font-size: 1.6rem;
+    font-family: $reg;
+  }
+  a:focus, button:focus {
+    outline: 2px dotted #aeb0b5;
+    outline-offset: 2px;
+  }

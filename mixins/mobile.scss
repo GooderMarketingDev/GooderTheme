@@ -1,0 +1,407 @@
+@media only screen and (max-width: 1400px) {
+    #AODACompliance .threesections {
+      padding: 60px 15px 60px 15px;
+    }
+  
+  
+    #AODACompliance .threesections {
+      padding-top: 20px;
+      padding-bottom: 80px;
+      max-width: 100%;
+      flex: 0 0 100%;
+      flex-wrap: wrap;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    #AODACompliance .threesections .right, #AODACompliance .threesections .left {
+      width: 49%;
+      text-align: left;
+      margin-top: 15px;
+    }
+    #AODACompliance .threesections .middle {
+      max-width: 100%;
+      order: -1;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 1240px) {
+    #AccessibilityAnalysis .threesections {
+      padding: 50px 15px;
+    }
+    #AODALeaders .row {
+        padding: 60px 15px;
+    }
+    .row{
+      padding: 0px 15px;
+      max-width: 100%;
+    }
+    #MainBanner .row .leftside ul.checkmark li:before {
+      padding-left: 15px;
+    }
+  
+  }
+  @media only screen and (max-width: 1140px) {
+    #AuditOptions .row .discover {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    #AuditOptions .row {
+        padding: 100px 15px;
+        justify-content: center;
+    }
+    #AODALeaders .companylogos {
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+    #AODALeaders .companylogos a {
+        margin: 20px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item:hover, #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item:focus{
+      background-color: $darkblue;
+      color: white;
+      a, a:focus{
+        background-color: $darkblue!important;
+        color: white!important;
+      }
+    }
+    header #bottombar nav {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      padding: 0px;
+      position: absolute;
+      right: 0px;
+      top: 10px;
+      z-index: 98;
+    }
+    header #bottombar #logo {
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 320px;
+        flex-wrap: nowrap;
+        position: relative;
+        z-index: 100;
+    }
+    header #bottombar nav ul#mega-menu-menu-1 {
+        width: 100%;
+        max-width: 100%;
+        right: 0px;
+        top: 8px;
+    }
+    #AuditOptions .row .auditoption {
+        width: 265px;
+        padding: 30px 15px;
+        margin: 20px;
+    }
+  
+  
+  
+    #AccessibilityAnalysis .threesections .left {
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+      align-self: center;
+      position: relative;
+      z-index: 4;
+      margin-bottom: 40px;
+    }
+    #AccessibilityAnalysis .threesections .right {
+      width: 100%;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+    }
+    #AccessibilityAnalysis .threesections .right .ContactBlueBlob {
+        position: absolute;
+        top: -600px;
+        max-width: 200%;
+        transform: rotate(-8deg);
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    #SubBanner {
+        height: auto;
+        .row {
+          position: relative;
+          height: auto;
+          padding: 60px 15px;
+          .leftside {
+            max-width: 100%;
+            flex: 0 0 100%;
+            align-self: center;
+            margin-bottom: 40px;
+        }
+        .rightside {
+          max-width: 100%;
+          flex: 0 0 100%;
+          align-self: center;
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    }
+  
+    h1, .h1{
+      font-size: 4.8rem;
+    }
+    h2, .h2{
+      font-size: 3.8rem;
+    }
+    .col-md-12 {
+        /* width: 100%; */
+        flex: 0 0 100%;
+    }
+    footer .row .footer-logo {
+        margin-bottom: 40px;
+    }
+  
+  }
+  @media only screen and (max-width: 768px) {
+  
+    #MainBanner .orangeblob {
+        position: absolute;
+        top: -5px;
+        right: -50px;
+    }
+    #MainBanner .row .leftside {
+        max-width: 100%;
+        flex: 0 0 100%;
+        align-self: center;
+        margin-top: -40px;
+        position: relative;
+        z-index: 99;
+    }
+    #MainBanner .row .rightside {
+        display: none;
+    }
+  
+    #AccessibilityAnalysis .threesections .right .Womenlaptop {
+        display: none;
+    }
+    label {
+        width: 100%;
+    }
+    #AccessibilityAnalysis .threesections .right #formcontainer {
+        max-width: 100%;
+    }
+    #AccessibilityAnalysis .threesections .left h5 {
+        margin-bottom: 40px;
+    }
+    #AccessibilityAnalysis .threesections .left p {
+        margin-bottom: 20px;
+    }
+    #AODALeaders .row {
+        padding: 60px 15px;
+        padding-bottom: 20px;
+    }
+    #AODACompliance .threesections .right, #AODACompliance .threesections .left {
+      width: 100%;
+      text-align: left;
+      margin-top: 15px;
+    }
+    .logo-text{
+      display: inline-flex;
+      flex: 0 0 100%;
+      align-content: center;
+      align-items: center;
+    }
+    .col-sm-12 {
+        /* width: 100%; */
+        flex: 0 0 100%;
+    }
+    .displaymobile{
+      display: block;
+    }
+    h1, .h1{
+      font-size: 4.6rem;
+    }
+    h2, .h2{
+      font-size: 3.2rem;
+    }
+    h3, .h3{
+      font-size: 2.8rem;
+    }
+    h4, .h4{
+      font-size: 2.4rem;
+    }
+    h5, .h5{
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 660px) {
+    footer .row .footermenu {
+        align-self: center;
+        max-width: 50%;
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 99;
+    }
+    footer .row .footer-logo {
+        align-self: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 99;
+    }
+    footer .row .GooderMarketing {
+        align-self: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        position: relative;
+        z-index: 99;
+    }
+    header #topbar a img {
+        margin-right: 5px;
+        align-self: center;
+    }
+    header #topbar a {
+        color: white;
+        display: inline-flex;
+    }
+    header #topbar .headerphone {
+        margin-left: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    #AuditOptions .row {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        justify-content: center;
+    }
+    header #bottombar #logo .full-text {
+        margin-left: 10px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .col-xsm-12 {
+        /* width: 100%; */
+        flex: 0 0 100%;
+    }
+  
+    h1, .h1{
+      font-size: 4.4rem;
+    }
+    h2, .h2{
+      font-size: 3rem;
+    }
+    h3, .h3{
+      font-size: 2.6rem;
+    }
+    h4, .h4{
+      font-size: 2.2rem;
+    }
+    h5, .h5{
+      font-size: 1.8rem;
+    }
+    h6, .h6{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1.6rem;
+    }
+    a{
+      font-size: 1.6rem;
+    }
+  
+  
+    header #topbar {
+        height: 80px;
+    }
+    header #topbar .button {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+        display: block;
+    }
+    .headerinfo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #AccessibilityAnalysis .threesections .right #formcontainer {
+        position: relative;
+        z-index: 98;
+        background-color: white;
+        max-width: 455px;
+        float: right;
+        padding: 20px 15px;
+        padding-bottom: 5px;
+    }
+    footer .row #footerblobs {
+        position: absolute;
+        bottom: 0px;
+    }
+    footer .row #footerblobs .FooterSmallBlobs {
+        position: relative;
+        left: 190px;
+        top: -20px;
+        z-index: 9;
+    }
+    footer .row #footerblobs .FooterBlobs {
+        position: relative;
+        left: 0px;
+        z-index: 8;
+    }
+    footer .row .footermenu h6 {
+        margin-bottom: 15px;
+    }
+    #AODALeaders .row {
+        padding: 40px 15px;
+    }
+    #AODALeaders .companylogos{
+      padding-top: 0px;
+    }
+    #AuditOptions .row {
+        padding: 60px 15px;
+        justify-content: center;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 430px) {
+    #MainBanner .orangeblob {
+        position: absolute;
+        top: -5px;
+        right: -150px;
+    }
+  
+    h1, .h1{
+      font-size: 4.2rem;
+    }
+    h2, .h2{
+      font-size: 3rem;
+    }
+    h3, .h3{
+      font-size: 2.6rem;
+    }
+    h4, .h4{
+      font-size: 2.2rem;
+    }
+    h5, .h5{
+      font-size: 1.7rem;
+    }
+    h6, .h6{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    a{
+      font-size: 1.5rem;
+    }
+  }
+  

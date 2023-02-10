@@ -1,0 +1,23 @@
+{
+  "name": "goodertheme",
+  "version": "1.0.0",
+  "description": "Single Theme\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DAODA compliant theme by GooderMarketing",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GooderMarketingDev/GooderTheme.git"
+  },
+  "keywords": [
+    "GooderMarketing",
+    "Theme"
+  ],
+  "author": "Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GooderMarketingDev/GooderTheme/issues"
+  },
+  "homepage": "https://github.com/GooderMarketingDev/GooderTheme#readme"
+}

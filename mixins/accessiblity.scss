@@ -1,0 +1,81 @@
+.screen-reader-only {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    max-height: 0;   
+    opacity: 0;         
+    overflow-y: hidden;
+    -webkit-transition: max-height 0.75s ease-in-out;
+    -moz-transition: max-height 0.75s ease-in-out;
+    -o-transition: max-height 0.75s ease-in-out;
+    transition: max-height 0.75s ease-in-out;
+  }
+  
+  
+  a:hover, a:focus, a:active {
+    position: relative;
+    transition: 0.75s;
+    .screen-reader-only{
+      display: block;
+      position: absolute;
+      bottom: -35px;
+      left: 0px;
+      opacity: 1;
+      width: 100%;
+      min-width: 180px;
+      max-height: 50px;
+      border: 1px solid $darkblue;
+      background-color: $orange;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      border-radius: 4px;
+      transition: 0.75s;
+    }
+  
+  }
+
+  
+  #skip-content {
+    background: white;
+    color: $black;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    top: -60px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 55px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: $title;
+    display: block;
+    z-index: 99999999999;
+    text-align: center;
+    border: 2px dotted $black;
+  }
+  #skip-content:focus {
+    background: #ffffff;
+    left: 0px;
+    outline: 1px;
+    position: absolute;
+    top: 0px;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+  }
+  .logged-in{
+    #skip-content:focus {
+      background: #ffffff;
+      left: 0px;
+      outline: 1px;
+      position: absolute;
+      top: 32px;
+      -webkit-transition: all 0.75s ease-in-out;
+      -moz-transition: all 0.75s ease-in-out;
+      -o-transition: all 0.75s ease-in-out;
+      transition: all 0.75s ease-in-out;
+    }
+  }
+  
